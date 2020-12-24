@@ -35,6 +35,7 @@ make build-client-contracts -j
 sleep 3
 make build-system-contracts -j
 sleep 3
+cd ~
 curl -JLO https://raw.githubusercontent.com/matsuro-hadouken/casper-tools/master/balance_check.sh
 sleep 3
 curl -JLO https://raw.githubusercontent.com/matsuro-hadouken/casper-tools/master/bond.sh
