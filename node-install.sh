@@ -42,7 +42,7 @@ curl -JLO https://raw.githubusercontent.com/matsuro-hadouken/casper-tools/master
 sleep 3
 wget https://raw.githubusercontent.com/matsuro-hadouken/casper-tools/master/explorer.sh
 sleep 3
-wget https://github.com/matsuro-hadouken/casper-tools/blob/master/active_validators.sh
+wget https://raw.githubusercontent.com/matsuro-hadouken/casper-tools/master/active_validators.sh
 sleep 3
 chmod 755 balance_check.sh
 sleep 3
