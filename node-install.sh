@@ -48,7 +48,7 @@ chmod 755 balance_check.sh
 sleep 3
 chmod 755 bond.sh
 sleep 3
-chomd 755 active_validators.sh
+chmod 755 active_validators.sh
 sleep 3
 chmod 755 explorer.sh
 sleep 3
