@@ -48,6 +48,10 @@ chmod 755 balance_check.sh
 sleep 3
 chmod 755 bond.sh
 sleep 3
+chomd 755 active_validators.sh
+sleep 3
+chmod 755 explorer.sh
+sleep 3
 ./balance_check.sh $(cat /etc/casper/validator_keys/public_key_hex)
 sleep 3
 curl -s http://54.67.67.33:8888/status | jq -r .last_added_block_info.hash
