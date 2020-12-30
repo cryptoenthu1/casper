@@ -19,7 +19,5 @@ sudo logrotate -f /etc/logrotate.d/casper-node
 sudo /etc/casper/delete_local_db.sh
 sudo systemctl stop casper-node
 sudo systemctl start casper-node
-systemctl status casper-node
-trap "echo CTRL-C was pressed" 2
 sed -i 's/add_bid/do_bid/g' bond.sh
 ./bond.sh
