@@ -19,7 +19,7 @@ sudo logrotate -f /etc/logrotate.d/casper-node
 sudo /etc/casper/delete_local_db.sh
 sudo systemctl stop casper-node
 sudo systemctl start casper-node
-systemctl status casper-node
 ctrl+c
 sed -i 's/add_bid/do_bid/g' bond.sh
 ./bond.sh
+sudo systemctl status casper-node
