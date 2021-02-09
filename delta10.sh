@@ -30,5 +30,7 @@ sudo sed -i "/trusted_hash =/c\trusted_hash = '$(curl -s 18.144.176.168:8888/sta
 sudo logrotate -f /etc/logrotate.d/casper-node
 sudo /etc/casper/delete_local_db.sh; sleep 1
 sudo systemctl stop casper-node-launcher
+sleep 5
 sudo systemctl start casper-node-launcher
+sleep 5
 sudo systemctl status casper-node-launcher
