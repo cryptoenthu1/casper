@@ -18,11 +18,6 @@ sudo -u casper /etc/casper/pull_casper_node_version.sh 1_0_0 delta-11
 sudo -u casper /etc/casper/config_from_example.sh 1_0_0
 
 sudo logrotate -f /etc/logrotate.d/casper-node
-cd casper-node
-git fetch
-git checkout release-0.7.6
-make setup-rs && make build-client-contracts -j
-cd ~
 sudo systemctl start casper-node-launcher; sleep 2
 curl -s localhost:8888/status | jq .build_version
 systemctl status casper-node-launcher
